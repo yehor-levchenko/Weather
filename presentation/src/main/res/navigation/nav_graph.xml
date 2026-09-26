@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/citiesFragment">
+
+    <fragment
+        android:id="@+id/citiesFragment"
+        android:name="com.yehorlevchenko.presentation.ui.screen.cities.CitiesFragment"
+        android:label="CitiesFragment">
+
+        <action
+            android:id="@+id/action_cities_to_cityWeatherDetails"
+            app:destination="@id/cityWeatherDetailsFragment"/>
+
+        <action
+            android:id="@+id/action_cities_to_cityWeatherHistory"
+            app:destination="@id/cityWeatherHistoryFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/cityWeatherDetailsFragment"
+        android:name="com.yehorlevchenko.presentation.ui.screen.details.CityWeatherDetailsFragment"
+        android:label="CityWeatherDetailsFragment">
+
+        <argument
+            android:name="dataSourceType"
+            app:argType="com.yehorlevchenko.domain.utils.types.DataSourceType"/>
+
+        <argument
+            android:name="cityWeatherId"
+            app:argType="long"
+            android:defaultValue="0L"/>
+
+        <argument
+            android:name="cityName"
+            app:argType="string"/>
+
+        <argument
+            android:name="cityId"
+            app:argType="long"
+            android:defaultValue="0L"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/cityWeatherHistoryFragment"
+        android:name="com.yehorlevchenko.presentation.ui.screen.history.CityWeatherHistoryFragment"
+        android:label="CityWeatherHistoryFragment">
+
+        <action
+            android:id="@+id/action_history_to_cityWeatherDetails"
+            app:destination="@id/cityWeatherDetailsFragment"/>
+
+        <argument
+            android:name="cityId"
+            app:argType="long"/>
+
+        <argument
+            android:name="cityName"
+            app:argType="string"/>
+    </fragment>
+</navigation>

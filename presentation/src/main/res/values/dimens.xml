@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- Text size. -->
+	<dimen name="text_size_01">12sp</dimen>
+	<dimen name="text_size_02">14sp</dimen>
+	<dimen name="text_size_03">20sp</dimen>
+	<dimen name="text_size_04">24sp</dimen>
+
+	<!-- Line height. -->
+	<dimen name="line_height_01">16sp</dimen>
+	<dimen name="line_height_02">24sp</dimen>
+
+	<!-- Margin. -->
+	<dimen name="margin_01">1dp</dimen>
+	<dimen name="margin_02">7dp</dimen>
+	<dimen name="margin_03">8dp</dimen>
+	<dimen name="margin_04">10dp</dimen>
+	<dimen name="margin_05">13dp</dimen>
+	<dimen name="margin_06">16dp</dimen>
+	<dimen name="margin_07">20dp</dimen>
+	<dimen name="margin_08">21dp</dimen>
+	<dimen name="margin_09">22dp</dimen>
+	<dimen name="margin_10">26dp</dimen>
+	<dimen name="margin_11">30dp</dimen>
+	<dimen name="margin_12">32dp</dimen>
+
+	<!-- Padding. -->
+	<dimen name="padding_01">14dp</dimen>
+	<dimen name="padding_02">20dp</dimen>
+
+	<!-- Corner radius. -->
+	<dimen name="corner_radius_01">4dp</dimen>
+	<dimen name="corner_radius_02">28dp</dimen>
+
+	<!-- Elevation. -->
+	<dimen name="elevation_01">4dp</dimen>
+
+	<!-- Toolbar view. -->
+	<dimen name="toolbar_view_height">150dp</dimen>
+	<dimen name="toolbar_view_icon_width">24dp</dimen>
+	<dimen name="toolbar_view_icon_height">24dp</dimen>
+
+	<!-- Add city view. -->
+	<dimen name="add_city_view_height">56dp</dimen>
+	<dimen name="add_city_view_icon_width">24dp</dimen>
+	<dimen name="add_city_view_icon_height">24dp</dimen>
+	<dimen name="add_city_view_divider_height">1dp</dimen>
+
+	<!-- Cities screen. -->
+	<dimen name="cities_list_item_height">56dp</dimen>
+	<dimen name="cities_list_item_icon_width">24dp</dimen>
+	<dimen name="cities_list_item_icon_height">24dp</dimen>
+	<dimen name="cities_list_bottom_space_height">88dp</dimen>
+	<dimen name="cities_add_city_button_height">56dp</dimen>
+
+	<!-- City weather history screen. -->
+	<dimen name="city_weather_history_list_item_height">72dp</dimen>
+	<dimen name="city_weather_history_list_item_icon_width">30dp</dimen>
+	<dimen name="city_weather_history_list_item_icon_height">24dp</dimen>
+</resources>

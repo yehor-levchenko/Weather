@@ -1,0 +1,249 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_base_screen_background"
+    tools:context=".ui.screen.details.CityWeatherDetailsFragment">
+
+    <com.yehorlevchenko.presentation.ui.component.ToolbarView
+        android:id="@+id/v_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        style="@style/BrandShapeStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/content_description_brand_shape"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <View
+        android:id="@+id/v_info_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/margin_12"
+        android:background="@drawable/bg_rounded_block"
+        android:elevation="@dimen/elevation_01"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gl_horizontal_1"
+        app:layout_constraintBottom_toTopOf="@id/gl_horizontal_2"/>
+
+    <TextView
+        android:id="@+id/tv_city_and_country"
+        style="@style/HeadlineVariantFirstStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginHorizontal="@dimen/margin_12"
+        android:gravity="center"
+        android:textColor="@color/black_100"
+        android:elevation="@dimen/elevation_01"
+        app:layout_constraintStart_toStartOf="@id/v_info_container"
+        app:layout_constraintEnd_toEndOf="@id/v_info_container"
+        app:layout_constraintTop_toTopOf="@id/v_info_container"
+        tools:text="London, UK"/>
+
+    <TextView
+        android:id="@+id/tv_title_description"
+        style="@style/SubtitleStyle"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/line_height_02"
+        android:layout_marginStart="@dimen/margin_12"
+        android:layout_marginBottom="@dimen/margin_02"
+        android:elevation="@dimen/elevation_01"
+        android:text="@string/weather_details_title_description"
+        app:layout_constraintStart_toStartOf="@id/v_info_container"
+        app:layout_constraintBottom_toTopOf="@id/tv_title_temperature"
+        app:layout_constraintEnd_toStartOf="@id/gl_vertical_3"/>
+
+    <TextView
+        android:id="@+id/tv_title_temperature"
+        style="@style/SubtitleStyle"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/line_height_02"
+        android:layout_marginStart="@dimen/margin_12"
+        android:layout_marginBottom="@dimen/margin_02"
+        android:elevation="@dimen/elevation_01"
+        android:text="@string/weather_details_title_temperature"
+        app:layout_constraintStart_toStartOf="@id/v_info_container"
+        app:layout_constraintBottom_toTopOf="@id/tv_title_humidity"
+        app:layout_constraintEnd_toStartOf="@id/gl_vertical_3"/>
+
+    <TextView
+        android:id="@+id/tv_title_humidity"
+        style="@style/SubtitleStyle"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/line_height_02"
+        android:layout_marginStart="@dimen/margin_12"
+        android:layout_marginBottom="@dimen/margin_02"
+        android:elevation="@dimen/elevation_01"
+        android:text="@string/weather_details_title_humidity"
+        app:layout_constraintStart_toStartOf="@id/v_info_container"
+        app:layout_constraintBottom_toTopOf="@id/tv_title_windspeed"
+        app:layout_constraintEnd_toStartOf="@id/gl_vertical_3"/>
+
+    <TextView
+        android:id="@+id/tv_title_windspeed"
+        style="@style/SubtitleStyle"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/line_height_02"
+        android:layout_marginStart="@dimen/margin_12"
+        android:layout_marginBottom="@dimen/margin_11"
+        android:elevation="@dimen/elevation_01"
+        android:text="@string/weather_details_title_windspeed"
+        app:layout_constraintStart_toStartOf="@id/v_info_container"
+        app:layout_constraintBottom_toBottomOf="@id/v_info_container"
+        app:layout_constraintEnd_toStartOf="@id/gl_vertical_3"/>
+
+    <TextView
+        android:id="@+id/tv_data_description"
+        style="@style/HeadlineVariantSecondStyle"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/line_height_02"
+        android:layout_marginEnd="@dimen/margin_12"
+        android:elevation="@dimen/elevation_01"
+        app:layout_constraintStart_toEndOf="@id/gl_vertical_4"
+        app:layout_constraintEnd_toEndOf="@id/v_info_container"
+        app:layout_constraintTop_toTopOf="@id/tv_title_description"
+        app:layout_constraintBottom_toBottomOf="@id/tv_title_description"
+        tools:text="Cloudy"/>
+
+    <TextView
+        android:id="@+id/tv_data_temperature"
+        style="@style/HeadlineVariantSecondStyle"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/line_height_02"
+        android:layout_marginEnd="@dimen/margin_12"
+        android:elevation="@dimen/elevation_01"
+        app:layout_constraintStart_toEndOf="@id/gl_vertical_4"
+        app:layout_constraintEnd_toEndOf="@id/v_info_container"
+        app:layout_constraintTop_toTopOf="@id/tv_title_temperature"
+        app:layout_constraintBottom_toBottomOf="@id/tv_title_temperature"
+        tools:text="20°C"/>
+
+    <TextView
+        android:id="@+id/tv_data_humidity"
+        style="@style/HeadlineVariantSecondStyle"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/line_height_02"
+        android:layout_marginEnd="@dimen/margin_12"
+        android:elevation="@dimen/elevation_01"
+        app:layout_constraintStart_toEndOf="@id/gl_vertical_4"
+        app:layout_constraintEnd_toEndOf="@id/v_info_container"
+        app:layout_constraintTop_toTopOf="@id/tv_title_humidity"
+        app:layout_constraintBottom_toBottomOf="@id/tv_title_humidity"
+        tools:text="45%"/>
+
+    <TextView
+        android:id="@+id/tv_data_windspeed"
+        style="@style/HeadlineVariantSecondStyle"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/line_height_02"
+        android:layout_marginEnd="@dimen/margin_12"
+        android:elevation="@dimen/elevation_01"
+        app:layout_constraintStart_toEndOf="@id/gl_vertical_4"
+        app:layout_constraintEnd_toEndOf="@id/v_info_container"
+        app:layout_constraintTop_toTopOf="@id/tv_title_windspeed"
+        app:layout_constraintBottom_toBottomOf="@id/tv_title_windspeed"
+        tools:text="20 km/h"/>
+
+    <ImageView
+        android:id="@+id/iv_weather_description_icon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="@dimen/elevation_01"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/content_description_weather_description_icon"
+        app:layout_constraintStart_toEndOf="@id/gl_vertical_1"
+        app:layout_constraintEnd_toStartOf="@id/gl_vertical_2"
+        app:layout_constraintTop_toBottomOf="@id/gl_horizontal_3"
+        app:layout_constraintBottom_toTopOf="@id/gl_horizontal_4"/>
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:id="@+id/pb"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/elevation_01"
+        app:layout_constraintStart_toStartOf="@id/v_info_container"
+        app:layout_constraintEnd_toEndOf="@id/v_info_container"
+        app:layout_constraintTop_toTopOf="@id/v_info_container"
+        app:layout_constraintBottom_toBottomOf="@id/v_info_container"/>
+
+    <TextView
+        android:id="@+id/tv_weather_info_receiving_details"
+        style="@style/CaptionStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_03"
+        android:layout_marginBottom="@dimen/margin_07"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="Weather information for London received on \n 01.10.2024 - 13:24"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_vertical_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.369"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_vertical_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.631"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_vertical_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.475"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_vertical_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.525"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_horizontal_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.119"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_horizontal_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.725"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_horizontal_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.295"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_horizontal_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.405"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

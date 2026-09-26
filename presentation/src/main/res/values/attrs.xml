@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="ToolbarView">
+		<attr name="tv_title" format="reference|string"/>
+		<attr name="tv_arrow_back_needed" format="boolean"/>
+	</declare-styleable>
+</resources>

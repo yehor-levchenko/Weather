@@ -1,0 +1,53 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/city_weather_history_list_item_height">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="@dimen/city_weather_history_list_item_icon_width"
+        android:layout_height="@dimen/city_weather_history_list_item_icon_height"
+        android:layout_marginStart="@dimen/margin_08"
+        android:contentDescription="@string/content_description_weather_description_icon"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_date"
+        style="@style/CaptionStyle"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/line_height_01"
+        android:layout_marginEnd="@dimen/margin_08"
+        android:layout_marginBottom="@dimen/margin_01"
+        android:gravity="start|center_vertical"
+        app:layout_constraintStart_toEndOf="@id/gl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_details"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="01.10.2024 - 13:24"/>
+
+    <TextView
+        android:id="@+id/tv_details"
+        style="@style/SubtitleStyle"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/line_height_02"
+        android:layout_marginEnd="@dimen/margin_08"
+        app:layout_constraintStart_toEndOf="@id/gl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Cloudy, 14°C"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

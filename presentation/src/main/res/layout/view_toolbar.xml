@@ -1,0 +1,42 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbar_view_height"
+    android:background="@drawable/bg_toolbar">
+
+    <ImageView
+        android:id="@+id/iv_arrow_back"
+        android:layout_width="@dimen/toolbar_view_icon_width"
+        android:layout_height="@dimen/toolbar_view_icon_height"
+        android:layout_marginStart="@dimen/margin_06"
+        android:layout_marginTop="@dimen/margin_05"
+        android:src="@mipmap/ic_arrow_back"
+        android:scaleType="center"
+        android:contentDescription="@string/content_description_arrow_back_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/HeadlineVariantFirstStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_09"
+        android:layout_marginEnd="@dimen/margin_06"
+        android:maxLines="2"
+        android:gravity="start"
+        android:textColor="@color/white_100"
+        app:layout_constraintStart_toEndOf="@id/gl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="Cities"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

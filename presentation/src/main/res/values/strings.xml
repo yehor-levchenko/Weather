@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Weather</string>
+
+    <!-- Weather details title. -->
+    <string name="weather_details_title_description">Description</string>
+    <string name="weather_details_title_temperature">Temperature</string>
+    <string name="weather_details_title_humidity">Humidity</string>
+    <string name="weather_details_title_windspeed">Windspeed</string>
+
+    <!-- Weather details data placeholder. -->
+    <string name="weather_details_data_placeholder_temperature">%s°C</string>
+    <string name="weather_details_data_placeholder_humidity">%s%%</string>
+    <string name="weather_details_data_placeholder_windspeed">%s km/h</string>
+
+    <!-- Toolbar title. -->
+    <string name="toolbar_title_cities">Cities</string>
+    <string name="toolbar_title_city_historical">%s historical</string>
+
+    <!-- Button title. -->
+    <string name="button_title_add_city">Add city</string>
+
+    <!-- Input field hint. -->
+    <string name="input_field_hint_enter_city_name">Enter city name</string>
+
+    <!-- Placeholder. -->
+    <string name="placeholder_weather_description_and_temperature">%1$s, %2$s</string>
+    <string name="placeholder_weather_details_receiving_details">Weather information for %1$s received on \n %2$s</string>
+
+    <!-- Content description. -->
+    <string name="content_description_search_icon">Search icon</string>
+    <string name="content_description_check_icon">Check icon</string>
+    <string name="content_description_location_city_icon">Location city icon</string>
+    <string name="content_description_arrow_back_icon">Arrow back icon</string>
+    <string name="content_description_info_icon">Info icon</string>
+    <string name="content_description_brand_shape">Brand shape background</string>
+    <string name="content_description_weather_description_icon">Weather description icon</string>
+
+    <!-- Database error. -->
+    <string name="error_database_not_available">Database not available</string>
+    <string name="error_database_insert">Error while saving data to database</string>
+    <string name="error_database_delete">Error while deleting data from database</string>
+    <string name="error_database_query">Error while making query to database</string>
+
+    <!-- Api error. -->
+    <string name="error_api_request_unauthorized">Request unauthorized</string>
+    <string name="error_api_not_found">Weather info not found for this city, please try another one</string>
+    <string name="error_api_internal_server_error">Internal server error occurred</string>
+    <string name="error_api_http_error">Http error occurred</string>
+    <string name="error_api_network_error">Network error occurred</string>
+
+    <!-- Other error. -->
+    <string name="error_unexpected">An unexpected error occurred, please try again later</string>
+</resources>
